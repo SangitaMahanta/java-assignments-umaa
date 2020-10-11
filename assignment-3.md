@@ -107,6 +107,7 @@ class A
 }
 ```
  #### Output: ####
+    No , It will not compile.
 
 - **Find the output with explanation.**
 ```java
