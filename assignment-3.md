@@ -1,10 +1,23 @@
-## ASSIGNMENT-3 ##
-- **Write a simple example of a Product class where it uses this constructor with paremeterized constructor.**
-  #### Solution : ####
+# ASSIGNMENT-3 #
 
-- **Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class.**
-  #### Solution : ####
- - **Override toString() method in the class A (as given below) such that it will print the value of i, j, k.**
+## QUESTION:1 ##
+
+ **Write a simple example of a Product class where it uses this constructor with paremeterized constructor.**
+  ### ***Solution :*** ###
+  
+  
+## QUESTION:2 ##
+
+ **Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class.**
+  ### ***Answer :*** ###
+  - Yes, the toString() present in java.lang.Object class.
+  - It returns the ***string***  representation of an object . It means , it consisting of the class of which
+  the object is an instance, the at-sign character ***`@`***, and the unsigned hexadecimal representation of the
+  ***hashCode*** of that object.
+  
+ ## QUESTION:3 ## 
+ 
+  **Override toString() method in the class A (as given below) such that it will print the value of i, j, k.**
 ```java
     public class Test 
     {
@@ -58,11 +71,72 @@
         }
     }
  ```
-   #### Output: ####
-   
+ 
+  - *After using ***Override toString()*** the code is :*
+   ```java
+   public class Test {
+    public static void main(String[] args) {
+        A a = new A(10, 20);
+        a.setK(400);
+        System.out.println(a);
+    }
+}
+
+class A {
+    private int i;
+    private int j;
+    private int k;
+
+    public A(int i, int j) {
+        this.i = i;
+        this.j = j;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public int getJ() {
+        return j;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
+    }
+
+    public int getK() {
+        return k;
+    }
+
+    public void setK(int k) {
+        this.k = k;
+    }
+    
+     @Override
+    public String toString() {
+        return "A[" + "i =" + i + ", j=" + j + ", k=" + k + "]";
+    }
+}
+```
+### ***Output :*** ###
+     A[i =10, j =20, k =400]
+     Here, the overriden toString() helps to getting an object states.
+
+   ## QUESTION:4 ##  
    - **What is StackOverflowError. When it occurs. It comes under which package in java library.**
-   #### Output: ####
+
+   ### ***Answer :*** ###
    
+   - A  StackOverflowError is a runtime error in java.
+   - It is thrown when the amount of call stack memory allocated by JVM is exceeded, due to excessive deep
+   loop or infinite recursion.
+   - It comes under java.lang.StackOverflowError package in java library.
+   
+   ## QUESTION:5 ##  
 -  **Will the below code compile? Find the output of the below code.** 
     ```java
             public class Test {
@@ -87,8 +161,8 @@
         }
      ```
         
- #### Output: ####
-        
+### ***Output :*** ###
+   ## QUESTION:5 ##         
   - **Will the below code compile. If not why?**
   ```java
 class A
@@ -106,7 +180,7 @@ class A
     }
 }
 ```
- #### Output: ####
+   ### ***Answer :*** ###
    * No , It will not compile.
    *
 
