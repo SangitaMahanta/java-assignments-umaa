@@ -50,7 +50,7 @@
 }
 ```
 ### ***Output :*** ###
-       Fruit name is = Apple of amount = 2.5 is of price =400.0
+	Fruit name is = Apple of amount = 2.5 is of price =400.0
 	----------------------------------------------------
 	Product{fruit='Apple', amount=2.5, price=400.0}
 	----------------------------------------------------
