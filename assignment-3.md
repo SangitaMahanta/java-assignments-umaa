@@ -462,7 +462,7 @@ public class B {
 }
 ```
  ### ***Output :*** ###
-        10
+ 	10
 	100
 	50
 	[ OUTPUT is same for both package ]
