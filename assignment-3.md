@@ -275,7 +275,7 @@ class A
 ### ***Output :*** ###
 - even
 ### ***Explanation :*** ###
-- Within ***main()*** constructor A() is called , And inside constructor A() ***this(10);*** which is invoking one parameterized constructor, inside that constuctor the value of ***x*** will be updated to 10 and  ***10%2 = 0***  ,so the output is ***even***
+- Within ***main()*** constructor A() is called , And inside constructor A() ***this(10);*** which is invoking one parameterized constructor, inside that constuctor the value of ***x*** will be updated to 10 and  ***10%2 = 0***  ,so the output is ***even*** .
  ## QUESTION:8 ##   
  **Will the below code compile?**
 ```java
