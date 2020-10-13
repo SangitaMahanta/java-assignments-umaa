@@ -3,19 +3,72 @@
 ## QUESTION:1 ##
 
  **Write a simple example of a Product class where it uses this constructor with paremeterized constructor.**
-  ### ***Solution :*** ###
+ ### ***Solution :*** ###
+  ```java
+  public class Product {
+    private String fruit;
+    private double amount;
+    private double price;
+
+    Product(String fruit, double amount, double price) {
+        this(amount, price);
+        this.fruit = fruit;
+        display(this);
+
+    }
+
+    Product(double amount, double price) {
+        this.amount = amount;
+        this.price = price;
+    }
+
+    void display(Product t) {
+        System.out.println("Fruit name is = " + fruit + " of amount = " + amount + " is of price =" + price);
+
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "fruit='" + fruit + '\'' +
+                ", amount=" + amount +
+                ", price=" + price +
+                '}';
+    }
+
+
+    public static void main(String[] args) {
+        Product product = new Product("Apple", 2.5, 400);
+        System.out.println("----------------------------------------------------");
+        String result = product.toString();
+        System.out.println(result);
+        System.out.println("----------------------------------------------------");
+        Product product1=new Product("Orange",3,350);
+
+
+    }
+}
+```
+### ***Output :*** ###
+        Fruit name is = Apple of amount = 2.5 is of price =400.0
+	----------------------------------------------------
+	Product{fruit='Apple', amount=2.5, price=400.0}
+	----------------------------------------------------
+	Fruit name is = Orange of amount = 3.0 is of price =350.0
+
+
   
   
 ## QUESTION:2 ##
 
  **Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class.**
-  ### ***Answer :*** ###
+ ### ***Answer :*** ###
   - Yes, the toString() present in java.lang.Object class.
   - It returns the ***string***  representation of an object . It means , it consisting of the class of which
   the object is an instance, the at-sign character ***`@`***, and the unsigned hexadecimal representation of the
   ***hashCode*** of that object.
   
- ## QUESTION:3 ## 
+## QUESTION:3 ## 
  
   **Override toString() method in the class A (as given below) such that it will print the value of i, j, k.**
 ```java
@@ -126,17 +179,17 @@ class A {
      A[i =10, j =20, k =400]
      Here, the overriden toString() helps to getting an object states.
 
-   ## QUESTION:4 ##  
+## QUESTION:4 ##  
    **What is StackOverflowError. When it occurs. It comes under which package in java library.**
 
-   ### ***Answer :*** ###
+### ***Answer :*** ###
    
    - A  StackOverflowError is a runtime error in java.
    - It is thrown when the amount of call stack memory allocated by JVM is exceeded, due to excessive deep
    loop or infinite recursion.
    - It comes under java.lang.StackOverflowError package in java library.
    
-   ## QUESTION:5 ##  
+## QUESTION:5 ##  
    **Will the below code compile? Find the output of the below code.** 
    ```java
             public class Test {
@@ -163,11 +216,11 @@ class A {
     
      
    ### ***Answer :*** ### 
-   - Yes, the above code is compile.But there is a recursion between this() and A(int x) meethods so, it wiil throw error at runtime thats is StackOverFlowError.
+   - Yes, the above code will compile.But there is a recursion between **this()** and **A(int x)** meethods so, it wiil throw error at runtime thats is called StackOverFlowError.
    
  
 
-   ## QUESTION:6 ##         
+## QUESTION:6 ##         
    **Will the below code compile. If not why?**
   ```java
 class A
@@ -185,10 +238,10 @@ class A
     }
 }
 ```
-   ### ***Answer :*** ###
+ ### ***Answer :*** ###
     No , It will not compile.Because here no main() is present.
     If we create main() then it also throw  recursive constructor invocation error in compile time.
-   ## QUESTION:7 ##    
+## QUESTION:7 ##    
  **Find the output with explanation.**
 ```java
 public class Test {
@@ -223,7 +276,7 @@ class A
 - even
 ### ***Explanation :*** ###
 - Within ***main()*** constructor A() is called , And inside constructor A() ***this(10);*** which is invoking one parameterized constructor, inside that constuctor the value of ***x*** will be updated to 10 and  ***10%2 = 0***  ,so the output is ***even***
-    ## QUESTION:8 ##   
+ ## QUESTION:8 ##   
  **Will the below code compile?**
 ```java
 class A
@@ -234,9 +287,9 @@ class A
     }
 }
 ```
-   ### ***Answer :*** ###
+### ***Answer :*** ###
     Yes,It will compile. But it will gives StackOverFlowError at runtime.
-   ## QUESTION:9 ##   
+## QUESTION:9 ##   
  **Why the below code won't compile?**
 ```java
 class A
@@ -250,8 +303,8 @@ class A
 ### ***Explanation :*** ###
     The above code will throw compile time error,Because of recurrsive contructor invokation.
 
-  ## QUESTION:10 ##   
-- **Find the output with explanation?**
+## QUESTION:10 ##   
+ **Find the output with explanation?**
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -287,7 +340,7 @@ class A
    and a.hashCode() are not equal, So the ouput is false.
   
   
-  ## QUESTION:11 ##  
+## QUESTION:11 ##  
  **Find the output with explanation?**
 ```java
 public class Test {
@@ -319,7 +372,7 @@ class A
 ### ***Explanation :*** ###
   - Here, within constuctor **A()**, invoked one argument constructor **this(10)** which has update the  feild value of that object and hold ***hashCode*** value .
   - so, The value of a.hashValue and a.hashCode() are equal. So the ouput is "true".
-     ## QUESTION:12 ## 
+## QUESTION:12 ## 
  **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
 ```java
 package com.pkg1;
@@ -355,7 +408,67 @@ class B
   }
 }
 ```
-   ## QUESTION:13 ## 
+ ### ***Answer :*** ###
+   - Here, in package **com.pkg1** field **i** is private.So we can't access the field **i** in class B from class A ,in same package.
+   Because private field can't be accessed in another class.
+   - So,to avoid the error we have to create a **gatter()** for **i** inside class A and call **i** through that **gatter()** inside class B.
+   - In package, **com.pkg2** we have called class A.But there is no class A inside package **com.pkg2**.
+   - So,we have to import class A from package **com.pkg1**.
+   - Here, in package **com.pkg2** field **i & k** can not be accessible .Because,in different package **private And default** field can not b accessible.
+   - We have to create **getter()** inside class A of package **com.pkg1** and print **i & K** inside class B of package **com.pkg2** through that **getter()** .
+   
+   ```java
+   package org.assignment.com.pkg1;
+
+public class A {
+    private int i = 10;
+    public int j = 100;
+    int k = 50;
+
+    public int getI() {
+        return i;
+    }
+
+    public int getK() {
+        return k;
+    }
+}
+
+package org.assignment.com.pkg1;
+
+
+public class B {
+    public static void main(String[] args)
+    {
+        A a = new A();
+        System.out.println(a.getI());
+        System.out.println(a.j);
+        System.out.println(a.k); // why this is accessible?
+    }
+}
+
+package org.assignment.com.pkg2;
+
+import org.assignment.com.pkg1.A;
+
+public class B {
+    public static void main(String[] args)
+{
+    A a = new A();
+    System.out.println(a.getI());
+    System.out.println(a.j);
+    System.out.println(a.getK()); // why this is not accessible?
+}
+}
+```
+ ### ***Output :*** ###
+        10
+	100
+	50
+	[ OUTPUT is same for both package ]
+ 
+   
+ ## QUESTION:13 ## 
  **Why we use getters and setters for a class. Give an example.**
  ### ***Answer :*** ###
  - Setter is used to set/update the field values of an object.
@@ -406,7 +519,7 @@ public class AccessData{
 - name: miki
 - age: 22
  
-   ## QUESTION:14 ## 
+  ## QUESTION:14 ## 
  **Why it is good to have private fields with public getters & setters?**
  ### ***Answer :*** ###
      By providing setter ,getter we have better control over the data and we can make sure that data integrity is maintained,so we keep instance variables(data) as private and provide public methods(API) to access them ,in a class.
