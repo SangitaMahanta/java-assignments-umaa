@@ -362,8 +362,51 @@ class B
  - Getters are used to get/retrive the field values.
  ### ***Example :*** ###
  ```java
+ public class StudentInfo {
+    private String name;
+    private int age;
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void display() {
+        System.out.println("name: "+getName());
+        System.out.println("age: "+getAge());
+    }
+}
+public class AccessData{
+    public static void main(String args[]) {
+        //Reading values from user
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the name of the student: ");
+        String name = sc.nextLine();
+        System.out.println("Enter the age of the student: ");
+        int age = sc.nextInt();
+        //Calling the setter and getter methods
+        StudentInfo studentInfo = new StudentInfo();
+        
+        studentInfo.setName(name);
+        studentInfo.setAge(age);
+        studentInfo.display();
+    }
+}
+
  ```
-   ## QUESTION:13 ## 
+ ### ***Output :*** ###
+- Enter the name of the student: miki
+- Enter the age of the student: 22
+- name: miki
+- age: 22
+ 
+   ## QUESTION:14 ## 
  **Why it is good to have private fields with public getters & setters?**
  ### ***Answer :*** ###
      By providing setter ,getter we have better control over the data and we can make sure that data integrity is maintained,so we keep instance variables(data) as private and provide public methods(API) to access them ,in a class.
