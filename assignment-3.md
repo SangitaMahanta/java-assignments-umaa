@@ -127,7 +127,7 @@ class A {
      Here, the overriden toString() helps to getting an object states.
 
    ## QUESTION:4 ##  
-   - **What is StackOverflowError. When it occurs. It comes under which package in java library.**
+   **What is StackOverflowError. When it occurs. It comes under which package in java library.**
 
    ### ***Answer :*** ###
    
@@ -137,8 +137,8 @@ class A {
    - It comes under java.lang.StackOverflowError package in java library.
    
    ## QUESTION:5 ##  
--  **Will the below code compile? Find the output of the below code.** 
-    ```java
+   **Will the below code compile? Find the output of the below code.** 
+   ```java
             public class Test {
             public static void main(String[] args) {
                 A a = new A();
@@ -159,11 +159,16 @@ class A {
                 this.x = x;
             }
         }
-     ```
-        
-### ***Output :*** ###
-   ## QUESTION:5 ##         
-  - **Will the below code compile. If not why?**
+```
+    
+     
+   ### ***Answer :*** ### 
+   - Yes, the above code is compile.But there is a recursion between this() and A(int x) meethods so, it wiil throw error at runtime thats is StackOverFlowError.
+   
+ 
+
+   ## QUESTION:6 ##         
+   **Will the below code compile. If not why?**
   ```java
 class A
 {
@@ -181,10 +186,10 @@ class A
 }
 ```
    ### ***Answer :*** ###
-   * No , It will not compile.
-   *
-
-- **Find the output with explanation.**
+    No , It will not compile.Because here no main() is present.
+    If we create main() then it also throw  recursive constructor invocation error in compile time.
+   ## QUESTION:7 ##    
+ **Find the output with explanation.**
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -214,8 +219,12 @@ class A
     }
 }
 ```
- #### Output: ####
-- **Will the below code compile?**
+### ***Output :*** ###
+- even
+### ***Explanation :*** ###
+- Within ***main()*** constructor A() is called , And inside constructor A() ***this(10);*** which is invoking one parameterized constructor, inside that constuctor the value of ***x*** will be updated to 10 and  ***10%2 = 0***  ,so the output is ***even***
+    ## QUESTION:8 ##   
+ **Will the below code compile?**
 ```java
 class A
 {
@@ -225,8 +234,10 @@ class A
     }
 }
 ```
- #### Output: ####
-- **Why the below code won't compile?**
+   ### ***Answer :*** ###
+    Yes,It will compile. But it will gives StackOverFlowError at runtime.
+   ## QUESTION:9 ##   
+ **Why the below code won't compile?**
 ```java
 class A
 {
@@ -236,7 +247,10 @@ class A
     }
 }
 ```
- #### Output: ####
+### ***Explanation :*** ###
+    The above code will throw compile time error,Because of recurrsive contructor invokation.
+
+  ## QUESTION:10 ##   
 - **Find the output with explanation?**
 ```java
 public class Test {
@@ -262,8 +276,19 @@ class A
     }
 }
 ```
- #### Output: ####
-- **Find the output with explanation?**
+### ***Output :*** ###
+     false
+     
+### ***Explanation :*** ###
+   - Inside class Test, we create an object of **class A** and assigned to instaance variable **a** ,in that time a zero argument constuctor will be called.
+   - But within zero argument constuctor , a newly created object of one argument constuctor will be invoked. so
+   here, this.hashcode has assigned to this.hashValue.It will only update the value of field hashValue only for
+   newly created object.It will not update the feild value of raferance object **a** .So the value of a.hashValue  
+   and a.hashCode() are not equal, So the ouput is false.
+  
+  
+  ## QUESTION:11 ##  
+ **Find the output with explanation?**
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -286,10 +311,16 @@ class A
         this.i = x;
         this.hashValue = this.hashCode();
     }
+    
 }
 ```
- #### Output: ####
-- **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
+### ***Output :*** ###
+    true
+### ***Explanation :*** ###
+  - Here, within constuctor **A()**, invoked one argument constructor **this(10)** which has update the  feild value of that object and hold ***hashCode*** value .
+  - so, The value of a.hashValue and a.hashCode() are equal. So the ouput is "true".
+     ## QUESTION:12 ## 
+ **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
 ```java
 package com.pkg1;
 
@@ -324,9 +355,16 @@ class B
   }
 }
 ```
- #### Output: ####
-- **Why we use getters and setters for a class. Give an example.**
- #### Solution: ####
+   ## QUESTION:13 ## 
+ **Why we use getters and setters for a class. Give an example.**
+ ### ***Answer :*** ###
+ - Setter is used to set/update the field values of an object.
+ - Getters are used to get/retrive the field values.
+ ### ***Example :*** ###
+ ```java
+ ```
+   ## QUESTION:13 ## 
+ **Why it is good to have private fields with public getters & setters?**
+ ### ***Answer :*** ###
+     By providing setter ,getter we have better control over the data and we can make sure that data integrity is maintained,so we keep instance variables(data) as private and provide public methods(API) to access them ,in a class.
 
-- **Why it is good to have private fields with public getters & setters?**
- #### Solution: ####
