@@ -115,4 +115,26 @@ public class Test {
       statement within non-static method m1()...
       statement within non-static method m1()...
 
- 
+ ## **4.**  **Parameterized Methods :** ##
+- **Define a class called Test.java**
+- **Define a main method.**
+- **Create a static method sum(int x, int y) and having return type as int. This should give sum of x + y**
+- **Call sum(10, 20) from main method and print the result inside main method**
+ ### ***Program :*** ###
+ ```java
+ package org.assignment.activity4;
+
+public class Test {
+    static int sum(int x,int y){
+        return x+y;
+    }
+    public static void main(String[] args) {
+       int result= sum(10,20);
+        System.out.println("Summation result of x and y is "+result);
+
+    }
+}
+```
+ ### ***Output :*** ###
+
+    Summation result of x and y is 30
