@@ -157,7 +157,7 @@ public class MobilePhoneMain {
 
 * false ,Because different **object** have different ***hashcode***.
 
-* class java.lang.Object  ***object*** is fully clasified class of - **java.lang package** .
+* class java.lang.Object  ***object*** is fully clasified class of  **java.lang package** .
 
 * false  ***== operator*** compare the memorylocation here obj1 and 
 obj2 has different memory location because obj1 and obj2 have different hashcode.
