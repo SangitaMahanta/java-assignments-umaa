@@ -139,13 +139,11 @@ public class MobilePhoneMain {
    - It is in [ java.lang ] package.
  
  
-##  Find the output? Always write the explanation for the output. why you are getting that output? ##
+#  Find the output? Always write the explanation for the output. why you are getting that output? #
  
-- ## JAVA OUTPUT ##
-----------------
-========================================================================================================
-
- a. public class Test {
+- **Find the output?**
+```java
+  public class Test {
     public static void main(String[] args) {
         Object obj1 = new Object();
         Object obj2 = new Object();
@@ -154,18 +152,18 @@ public class MobilePhoneMain {
         System.out.println(obj1 == obj2);
     }
 }
+```
+### ***Answer :*** ###
 
-ans-->
--------------------------------
-false  //different object have different hashcode
+* false  //different object have different hashcode
 
-class java.lang.Object  //object is fully clasified class of - java.lang package
+* class java.lang.Object  //object is fully clasified class of - java.lang package
 
-false // '==' operator compare the memorylocation here obj1 and
-      //   obj2 has different memory location because obj1 and obj2 have different hashcode.
+* false // '==' operator compare the memorylocation here obj1 and
+//   obj2 has different memory location because obj1 and obj2 have different hashcode.
 
-==========================================================================================================================
- b.
+- **Find the output?**
+```java
 public class Test {
     int x;
 
@@ -178,15 +176,13 @@ public class Test {
         System.out.println(t.x);
     }
 }
+```
+### ***Answer :*** ###
+*  10 // when we create an object, here the one argument constuctor is automatically called and the value of X will be assign 10.
 
-ans-->
-------------------------------------
-      10 // when we create an object, here the one argument constuctor is automatically called and the value of X will be assign 10.
 
-=====================================================================================================================================
-
-c. Why below code will not compile?What is the fix we have to do so that the code will compile.
-
+- **Why below code will not compile?What is the fix we have to do so that the code will compile?**
+```java
 public class Test {
     int x;
 
@@ -199,16 +195,16 @@ public class Test {
         System.out.println(t.x);
     }
 }
+```
+### ***Answer :*** ###
 
-ans-->
--------------------------------------
-it gives compile time error.
-Because here at the constuctor calling part we have not passed any value of type int.
+* It gives compile time error.
+* Because here at the constuctor calling part, we have not passed any value of type ***int***.
 
-=================================================================================================
+
  
- d.Will below code will compile?
-
+- Will below code will compile?
+```java
 public class Test {
     int x;
 
@@ -225,16 +221,15 @@ public class Test {
         System.out.println(t.x);
     }
 }
+```
+### ***Answer :*** ###
+
+* Yes, the above code will be compile .Because,  we define no argument constuctor as well as 
+one parameterize constuctor and the O/P is **0** (default value of int).
 
 
-ans-->
---------------------------------
-Yes, the above code will be compile because  we define no argument constuctor as well as 
-one parameterize constuctor and the O/P is 0 (default value of int).
-
-===========================================================================================================================================
-e.
-
+- **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -245,26 +240,22 @@ public class Test {
         System.out.println(t.y);
     }
 }
+```
+### ***Answer :*** ###
+
+* 0  // Here, X is not initialized so default value of **int 0**.
+* null // Y  is not initialized so default value of **String null**.
 
 
-ans-->
-------------------------------------
-0  // X is not initialized so default value of int 0
-null // Y  is not initialized so default value of String null
-
-==================================================================================================================================
        
-f.What is the default value of int,String variables?
-
-  ans-->
+- **What is the default value of int,String variables?**
+### ***Answer :*** ###
       
       Default value of int = 0
       Default value of String = null
-
-================================================================================================================================
  
- g.
-
+ - **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -282,15 +273,15 @@ public class Test {
         System.out.println(t.y);
     }
 }
+```
+### ***Answer :*** ###
+
+* true // **Test tVar=this;** Here **this** refers to current object and it will assigned to tVar so,it
+address same memory locaion. 
+* 10
+* john
 
 
-ans-->
------------------------------------
-true //[ Test tVar=this; ] here 'this' refers to current object and it will assigned to tVar so,it address same memory locaion. 
-10
-john
-
-====================================================================================================================================
         
 h.
 
