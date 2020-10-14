@@ -1,5 +1,9 @@
-1 . 
-    
+# ASSIGNMENT-2 #
+ ## QUESTION: 1 ##
+**Example with code to show state and behaviour of an object
+       where behaviour depends upon the state of object?**
+  ### Program : ###
+   ```java 
     package org.assignment.phone;
 
 public class MobilePhone {
@@ -57,15 +61,63 @@ public class MobilePhoneMain {
         mobilePhone.mobileInfo(mobilePhone1);
     }
 }
+```
+### ***Output :*** ###
+        true
+        
+        The Mobile Name is : Vivo
+        The Mobile Name is : Vivo
+
+        The Mobile Price is : 28569.49
+        The Mobile Price is : 28569.49
+
+        The Mobile Model is : Android 1951
+        The Mobile Model is : Android 1951
+
+        The Mobile Color is : Sonic Blue
+        The Mobile Color is : Sonic Blue
+
+        After discount The cost is : 28069.49
+        ----------------------------------------------------------------------------------------
+        true
+        
+        The Mobile Name is : Sumsung
+        The Mobile Name is : Sumsung
+
+        The Mobile Price is : 20569.49
+        The Mobile Price is : 20569.49
+
+        The Mobile Model is : Android 1951
+        The Mobile Model is : Android 1951
+
+        The Mobile Color is : Rosy Pink
+        The Mobile Color is : Rosy Pink
+
+        After discount The cost is : 20069.49
+        ----------------------------------------------------------------------------------------
+        false
+
+        The Mobile Name is : Vivo
+        The Mobile Name is : Vivo
+
+        The Mobile Price is : 20069.49
+        The Mobile Price is : 28069.49
+
+        The Mobile Model is : Android 1951
+        The Mobile Model is : Android 1951
+
+        The Mobile Color is : Rosy Pink
+        The Mobile Color is : Sonic Blue
+
+        After discount The cost is : 27569.49
+        ----------------------------------------------------------------------------------------
 
 
-
-
-
-2 . What is the definition of hashcode as per java 8 document?
-
-hashCode() :-
--------------------
+## QUESTION:2 ##
+**What is the definition of hashcode as per java 8 document?**
+ ### ***Answer :*** ###
+- ***hashCode() :-***
+  -------------------
     The hashCode() method is defined in Object class which is the super most class in Java.
     This method returns a hash code value for the object. 
     
