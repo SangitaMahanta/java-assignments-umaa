@@ -118,7 +118,7 @@ public class MobilePhoneMain {
  ### ***Answer :*** ###
 - **hashCode() :-**
   -------------------
-    The hashCode() method is defined in Object class which is the super most class in Java.
+    The ***hashCode()*** method is defined in Object class which is the super most class in Java.
     This method returns a hash code value for the object. 
     
     * It returns an integer value of the object memory address.
