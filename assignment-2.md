@@ -450,15 +450,15 @@ public class Calculator
 }
 ```
 ### ***Output :*** ###
-
-  *  private int i;  // state 
-     private int j;  // state 
-    
-   * this.i = i; // state of an object
-     this.j = j; // state of an object
-
+- class state:
+  *  private int i;    
+  *  private int j;     
+- state of an object :  
+  *  this.i = i; // state of an object
+  *  this.j = j; // state of an object
+- behavior :
    * int sum() //behaviour
-     return i + j; //here object behaviour depends upon state
+   * return i + j; //here object behaviour depends upon state
 
  
 ## **14.** **Find the output?Identify the static method&variables.** ##
