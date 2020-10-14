@@ -120,6 +120,7 @@ public class Test {
 - **Define a main method.**
 - **Create a static method sum(int x, int y) and having return type as int. This should give sum of x + y**
 - **Call sum(10, 20) from main method and print the result inside main method**
+
  ### ***Program :*** ###
  ```java
  package org.assignment.activity4;
@@ -136,5 +137,26 @@ public class Test {
 }
 ```
  ### ***Output :*** ###
-
     Summation result of x and y is 30
+
+ ## **5.**  **Variable Declaration :** ##
+- 
+     * **You may see compilation error with this activity. Define a class called Test.java**
+     * **Define a main method.**
+     * **Declare a static variable x of type int at the class level. Declare a non static varaible y of type String at
+     the class level. Run the class. Verify output.**
+     
+- **Define a static block. print the value of x & y inside static block. Run the class. Verify output.**
+- **Define a non-static block. print the value of x & y inside non-static block. Run the class. Verify output.**
+- **Define a static method m1() with void return type. print the value of x & y inside static method. Run the class. Verify output.**
+- **Define a non-static method m2() with void return type. print the value of x & y inside non-static method. Run the class. Verify output.**
+- **print the value of x & y inside main method. Run the class. Verify output.****
+- **Inside main method create object of Test class using new. Test var = new Test();**
+- **call m2() using the reference variable var. Run the class. Verify output.**
+- **Inside main method call m1() without object. Run the class. Verify output.**
+- **What is the default value for x and y you are getting here?**
+
+ ### ***Program :*** ###
+ ```java
+ ```
+  ### ***Output :*** ###
