@@ -116,7 +116,7 @@ public class MobilePhoneMain {
 ## QUESTION:2 ##
 **What is the definition of hashcode as per java 8 document?**
  ### ***Answer :*** ###
-- ***hashCode() :-***
+- **hashCode() :-**
   -------------------
     The hashCode() method is defined in Object class which is the super most class in Java.
     This method returns a hash code value for the object. 
@@ -128,19 +128,20 @@ public class MobilePhoneMain {
     * It is not required that if two objects are unequal according to the equals(java.lang.Object) method,
       then calling the hashCode method on each of the two objects must produce distinct integer results.
       However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+## QUESTION:3 ##
+**What is the fully qualified name of Object class in java ?**
+ ### ***Answer :*** ###
+   - The fully qualifued Object Class in java is [ java.lang.Object ]
 
-
-3 . What is the fully qualified name of Object class in java ?
-Ans :- The fully qualifued Object Class in java is [ java.lang.Object ]
-
-
-4 . Object class is in which package ?
- Ans :- It is in [ java.lang ] package.
+## QUESTION:4 ##
+ **Object class is in which package ?**
+  ### ***Answer :*** ###
+   - It is in [ java.lang ] package.
  
  
+##  Find the output? Always write the explanation for the output. why you are getting that output? ##
  
- 
- JAVA OUTPUT
+- ## JAVA OUTPUT ##
 ----------------
 ========================================================================================================
 
