@@ -131,17 +131,17 @@ public class MobilePhoneMain {
 ## QUESTION:3 ##
 **What is the fully qualified name of Object class in java ?**
  ### ***Answer :*** ###
-   - The fully qualifued Object Class in java is [ java.lang.Object ]
+   - The fully qualifued Object Class in java is ***java.lang.Object*** .
 
 ## QUESTION:4 ##
  **Object class is in which package ?**
   ### ***Answer :*** ###
-   - It is in [ java.lang ] package.
+   - It is in **java.lang** package.
  
  
 #  Find the output? Always write the explanation for the output. why you are getting that output? #
  
-- **Find the output?**
+- **1.**  **Find the output?**
 ```java
   public class Test {
     public static void main(String[] args) {
@@ -155,14 +155,14 @@ public class MobilePhoneMain {
 ```
 ### ***Answer :*** ###
 
-* false  //different object have different hashcode
+* false ,Because different **object** have different ***hashcode***.
 
-* class java.lang.Object  //object is fully clasified class of - java.lang package
+* class java.lang.Object  ***object*** is fully clasified class of - **java.lang package** .
 
-* false // '==' operator compare the memorylocation here obj1 and
-//   obj2 has different memory location because obj1 and obj2 have different hashcode.
+* false  ***== operator*** compare the memorylocation here obj1 and 
+obj2 has different memory location because obj1 and obj2 have different hashcode.
 
-- **Find the output?**
+- **2.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -178,10 +178,11 @@ public class Test {
 }
 ```
 ### ***Answer :*** ###
-*  10 // when we create an object, here the one argument constuctor is automatically called and the value of X will be assign 10.
+*  10 
+* when we create an object, here the one argument constuctor is automatically called and the value of X will be assign 10.
 
 
-- **Why below code will not compile?What is the fix we have to do so that the code will compile?**
+- **3.** **Why below code will not compile?What is the fix we have to do so that the code will compile?**
 ```java
 public class Test {
     int x;
@@ -198,12 +199,12 @@ public class Test {
 ```
 ### ***Answer :*** ###
 
-* It gives compile time error.
+* No,It gives compile time error.
 * Because here at the constuctor calling part, we have not passed any value of type ***int***.
 
 
  
-- Will below code will compile?
+- **4.** **Will below code will compile?**
 ```java
 public class Test {
     int x;
@@ -228,7 +229,7 @@ public class Test {
 one parameterize constuctor and the O/P is **0** (default value of int).
 
 
-- **Find the output?**
+- **5.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -248,13 +249,13 @@ public class Test {
 
 
        
-- **What is the default value of int,String variables?**
+- **6.** **What is the default value of int,String variables?**
 ### ***Answer :*** ###
       
       Default value of int = 0
       Default value of String = null
  
- - **Find the output?**
+ - **7.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -281,7 +282,7 @@ address same memory locaion.
 * 10
 * john
 
-- **Find the output?**
+- **8.** **Find the output?**
 ```java    
 
 public class Test {
@@ -313,7 +314,7 @@ public class Test {
 
 
 
-- **Find the output?**
+- **9.**  **Find the output?**
 ```java
 public class Test {
     int x;
@@ -342,7 +343,7 @@ public class Test {
   *  false                                    
   *  Here,**this.m1(this);**  upadate   x=100 and  y=Deo so, t.x==10 and t.y==john will the result is ***false***
 
-- **Find the output?**
+- **10.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -371,7 +372,7 @@ public class Test {
 * Deo
 * Here, x = x and y = y will not modify the field value but ***m1(this)*** update the field value x and y.
      
-- **Find the output?**
+- **11.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -398,7 +399,7 @@ public class Test {
      0
      null
       
-- **Find the output?**
+- **12.** **Find the output?**
 ```java
 public class Test {
     int x;
@@ -429,7 +430,7 @@ public class Test {
 
 
 
-- **Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?**
+- **13.** **Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?**
 ```java
 public class Calculator
 {
@@ -460,7 +461,7 @@ public class Calculator
      return i + j; //here object behaviour depends upon state
 
  
-- **Find the output?Identify the static method&variables.**
+- **14.** **Find the output?Identify the static method&variables.**
 
 ```java
 public class Test 
@@ -533,7 +534,7 @@ public class Test
     240
 * In the above code, **int getX()** is the static method and here,**x is stactic variable** and **y is non-static variable** .
 
- - **Write some code to create Null Pointer Exception?**
+ - **15.** **Write some code to create Null Pointer Exception?**
  ### ***Program :*** ###
  ```java
         
