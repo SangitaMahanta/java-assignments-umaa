@@ -274,16 +274,15 @@ public class Test {
     }
 }
 ```
-### ***Answer :*** ###
+### ***Output :*** ###
 
 * true // **Test tVar=this;** Here **this** refers to current object and it will assigned to tVar so,it
 address same memory locaion. 
 * 10
 * john
 
-
-        
-h.
+- **Find the output?**
+```java    
 
 public class Test {
     int x;
@@ -306,17 +305,16 @@ public class Test {
         t1.y = "Doe";
     }
 }
+```
+### ***Output :*** ###
+* 100
+* Doe
+* Here **m1(this);** will be invoke ***m1()*** and the field value X or Y are updated from 10, john to 100 and Deo.
 
-ans-->
-------------------------
-100
-Doe
-//Here [ m1(this); ]will be invoke m1 method and the field value X or Y are updated from 10, john to 100 and Deo.
 
-=========================================================================================================================
 
-i.
-
+- **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -338,17 +336,14 @@ public class Test {
         t1.y = "Doe";
     }
 }
+```
+### ***Output :*** ###
+  * false this.m1(this); ]  
+  *  false                                    
+  *  Here,**this.m1(this);**  upadate   x=100 and  y=Deo so, t.x==10 and t.y==john will the result is ***false***
 
-ans-->
------------------------------
-false // [  this.m1(this); ]  upadate   x=100 so, t.x==10 false
-false //                                y=Deo     t.y==john false
-      
-
-===================================================================================================================
-
-j.
-
+- **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -370,18 +365,14 @@ public class Test {
         t1.y = "Doe";
     }
 }
-
-
-ans-->
--------------------------------------
-100 
-Deo
-//Here, x = x and y = y will not modify the field value but [ m1(this) ] update the field value x and y.
-
-===================================================================================================================================
+```
+### ***Output :*** ###
+* 100 
+* Deo
+* Here, x = x and y = y will not modify the field value but ***m1(this)*** update the field value x and y.
      
- k.
-
+- **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -402,18 +393,13 @@ public class Test {
         t1.y = "Doe";
     }
 }
-
-
-ans-->
------------------------------------
-0
-null
-
-
-================================================================================================================================
+```
+### ***Output :*** ###
+     0
+     null
       
-l.
-
+- **Find the output?**
+```java
 public class Test {
     int x;
     String y;
@@ -433,43 +419,50 @@ public class Test {
         System.out.println(t.y);
     }
 }
+```
+
+### ***Output :*** ###
+* true  
+* Here, **Test t** is assign to **t1**.So both are refers to same memory location and field are also same so its ***true***.
+* 300
+* alex
 
 
-ans-->
----------------------------------
-true // here, Test 't' is assign to 't1' so both are refers to same memory location and field are also same
-300
-alex
 
-
-====================================================================================================================================================================
-
-m. Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?
-
+- **Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?**
+```java
 public class Calculator
 {
-    private int i;  // state 
-    private int j;  // state 
-
-    public Calculator(int i, int j)
-    {
-        this.i = i; // state of an object
-        this.j = j; // state of an object
-    }
-
-    public int sum() //behaviour
-    {
-        return i + j; //here object behaviour depends upon state
-    }
+   private int i;
+   private int j;
+   
+   public Calculator(int i, int j)
+   {
+     this.i = i;
+     this.j = j;
+   }
+   
+   public int sum()
+   {
+     return i + j;
+   }
 }
+```
+### ***Output :*** ###
 
+  *  private int i;  // state 
+     private int j;  // state 
+    
+   * this.i = i; // state of an object
+     this.j = j; // state of an object
 
+   * int sum() //behaviour
+     return i + j; //here object behaviour depends upon state
 
-=================================================================================================================================================================
  
-n.Find the output?Identify the static method&variables.
+- **Find the output?Identify the static method&variables.**
 
-
+```java
 public class Test 
 {
     static int x;
@@ -526,27 +519,25 @@ public class Test
         return x + y;
     }
 }
+```
+### ***Output :*** ###
+  * 120
+    120
+    120
+    320
+    120
+    120
+    120
+    120
+    440
+    240
+* In the above code, **int getX()** is the static method and here,**x is stactic variable** and **y is non-static variable** .
 
-ans-->
----------------------------------------
-120
-120
-120
-320
-120
-120
-120
-120
-440
-240
-
-
-==================================================================================================================================================
-        o.Write some code to create Null Pointer Exception
-
-        ans-->
+ - **Write some code to create Null Pointer Exception?**
+ ### ***Program :*** ###
+ ```java
         
-        public class Test1 {
+    public class Test1 {
     static int x;
     void m1(){
         System.out.println("Inside m1 method");
@@ -558,5 +549,5 @@ ans-->
 
     }
 }
-
+```
 
