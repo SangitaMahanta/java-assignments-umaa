@@ -158,5 +158,9 @@ public class Test {
 
  ### ***Program :*** ###
  ```java
+ 
  ```
   ### ***Output :*** ###
+        No output
+        Inside static block..
+        In static block value of x is 0
