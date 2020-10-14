@@ -141,7 +141,7 @@ public class MobilePhoneMain {
  
 #  Find the output? Always write the explanation for the output. why you are getting that output? #
  
-- **1.**  **Find the output?**
+## **1.**  **Find the output?** ##
 ```java
   public class Test {
     public static void main(String[] args) {
@@ -162,7 +162,7 @@ public class MobilePhoneMain {
 * false  ***== operator*** compare the memorylocation here obj1 and 
 obj2 has different memory location because obj1 and obj2 have different hashcode.
 
-- **2.** **Find the output?**
+## **2.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -182,7 +182,7 @@ public class Test {
 * when we create an object, here the one argument constuctor is automatically called and the value of X will be assign 10.
 
 
-- **3.** **Why below code will not compile?What is the fix we have to do so that the code will compile?**
+## **3.** **Why below code will not compile?What is the fix we have to do so that the code will compile?** ##
 ```java
 public class Test {
     int x;
@@ -204,7 +204,7 @@ public class Test {
 
 
  
-- **4.** **Will below code will compile?**
+## **4.** **Will below code will compile?** ##
 ```java
 public class Test {
     int x;
@@ -229,7 +229,7 @@ public class Test {
 one parameterize constuctor and the O/P is **0** (default value of int).
 
 
-- **5.** **Find the output?**
+## **5.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -249,13 +249,13 @@ public class Test {
 
 
        
-- **6.** **What is the default value of int,String variables?**
+## **6.** **What is the default value of int,String variables?** ##
 ### ***Answer :*** ###
       
       Default value of int = 0
       Default value of String = null
  
- - **7.** **Find the output?**
+## **7.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -282,7 +282,7 @@ address same memory locaion.
 * 10
 * john
 
-- **8.** **Find the output?**
+## **8.** **Find the output?** ##
 ```java    
 
 public class Test {
@@ -314,7 +314,7 @@ public class Test {
 
 
 
-- **9.**  **Find the output?**
+## **9.**  **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -343,7 +343,7 @@ public class Test {
   *  false                                    
   *  Here,**this.m1(this);**  upadate   x=100 and  y=Deo so, t.x==10 and t.y==john will the result is ***false***
 
-- **10.** **Find the output?**
+## **10.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -372,7 +372,7 @@ public class Test {
 * Deo
 * Here, x = x and y = y will not modify the field value but ***m1(this)*** update the field value x and y.
      
-- **11.** **Find the output?**
+## **11.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -399,7 +399,7 @@ public class Test {
      0
      null
       
-- **12.** **Find the output?**
+## **12.** **Find the output?** ##
 ```java
 public class Test {
     int x;
@@ -430,7 +430,7 @@ public class Test {
 
 
 
-- **13.** **Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?**
+## **13.** **Identify State&Behaviour.Find where the state is used.Does behavour depends on the state?** ##
 ```java
 public class Calculator
 {
@@ -461,7 +461,7 @@ public class Calculator
      return i + j; //here object behaviour depends upon state
 
  
-- **14.** **Find the output?Identify the static method&variables.**
+## **14.** **Find the output?Identify the static method&variables.** ##
 
 ```java
 public class Test 
@@ -534,7 +534,7 @@ public class Test
     240
 * In the above code, **int getX()** is the static method and here,**x is stactic variable** and **y is non-static variable** .
 
- - **15.** **Write some code to create Null Pointer Exception?**
+ ## **15.** **Write some code to create Null Pointer Exception?** ##
  ### ***Program :*** ###
  ```java
         
