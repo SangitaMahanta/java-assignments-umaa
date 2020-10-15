@@ -220,5 +220,44 @@ public class Test {
 - **Inside main method create object of Test using new. Test var = new Test(); From the main method call var.m2(). Run the class. Verify output.**
  ### ***Program :*** ###
  ```java
+ package org.assignment.activity6;
+
+public class Test {
+ static int x;
+   String y;
+   static {
+       x = 20; // initialize static variable x
+       System.out.println("In static block x =  "+ x);
+   }
+
+    {
+        y = "hello"; //  initialize non-static variable y
+        System.out.println("In non-static block y =  "+ y);
+
+    }
+
+   static void m1() // static method
+   {
+       x = 30;
+       System.out.println("In static m1() x =  "+ x);
+   }
+
+   void m2() // non-static method
+   {
+       y = "bye";
+       System.out.println("In non-static m2() y = "+ y);
+   }
+    public static void main(String[] args) {
+        m1();
+        Test var = new Test();
+        var.m2();
+    }
+}
  ```
  ### ***Output :*** ###
+    Here,No compilation error occur
+    In static block x =  20
+    In static m1() x =  30
+    In non-static block y =  hello
+    In non-static m2() y = bye
+
