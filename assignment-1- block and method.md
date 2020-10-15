@@ -208,4 +208,13 @@ public class Test {
        
        here,default value of x=0 and y= null.
 
-
+ ## **6.**  **Variable Declaration & Intialization :** ##
+ - **You may see compilation error with this activity. Define a class called Test.java**
+- **Define a main method.**
+- **Declare a static variable x of type int at the class level. Declare a non static varaible y of type String at the class level. Run the class. Verify output.**
+- **Define a static block. Initialize x = 20; and print x. Run the class. Verify output.**
+- **Define a static method m1(). Initialize x = 30; and print x. Run the class. Verify output.**
+- **From the main method call m1() without object. Run the class. Verify output.**
+- **Define a non static block. Initialize y = "hello"; and print y. Run the class. Verify output.**
+- **Define a non static method m2(). Initialize y = "bye"; and print y. Run the class. Verify output.**
+- **Inside main method create object of Test using new. Test var = new Test(); From the main method call var.m2(). Run the class. Verify output.**
