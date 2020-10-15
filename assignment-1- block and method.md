@@ -218,3 +218,5 @@ public class Test {
 - **Define a non static block. Initialize y = "hello"; and print y. Run the class. Verify output.**
 - **Define a non static method m2(). Initialize y = "bye"; and print y. Run the class. Verify output.**
 - **Inside main method create object of Test using new. Test var = new Test(); From the main method call var.m2(). Run the class. Verify output.**
+ ### ***Program :*** ###
+ ### ***Output :*** ###
