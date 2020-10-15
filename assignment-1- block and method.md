@@ -256,8 +256,15 @@ public class Test {
  ```
  ### ***Output :*** ###
     Here,No compilation error occur
+    
     In static block x =  20
     In static m1() x =  30
     In non-static block y =  hello
     In non-static m2() y = bye
 
+ ## **7.**  **Final Variables or Constants :** ##
+- **Define a class called Test.java**
+- **Define a main method.**
+- **Declare a final static variable x of int type. Try to initialize this 2 times.**
+- **Declare a final non static variable y of int type. Try to initialize this 2 times.**
+ 
