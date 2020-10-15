@@ -268,3 +268,7 @@ public class Test {
 - **Declare a final static variable x of int type. Try to initialize this 2 times.**
 - **Declare a final non static variable y of int type. Try to initialize this 2 times.**
  
+  ### ***Program :*** ###
+  ```java
+  ```
+   ### ***Output :*** ###
