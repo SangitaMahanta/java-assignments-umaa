@@ -43,6 +43,7 @@
       AbstractList (ac)
    ### ***Implements :*** ###
     List<E>, RandomAccess, Cloneable, java.io.Serializable
+    
   *   **AbstractList (ac) :**   
     ***Extends :***    AbstractCollection: (ac)  
     ***Implemnets :***  List<E>
@@ -97,7 +98,7 @@
    
 *   **AbstractCollection (ac) :** 
 
-      ***Implemnets :***   Collection<E>
+      ***Implemnets :***   Collection(I)
     
 * ###  **Abstract Methods of above abstract classes :** ###
      #### **1.**  **AbstractQueue (ac) :** ####   
@@ -106,3 +107,25 @@
              a)iterator();
              b)size();  
      
+     
+## **5.**  **LinkedBlockingQueue (C):** ##
+  ### ***Extends :*** ###
+     AbstractQueue (ac)
+   ### ***Implements :*** ###
+     BlockingQueue<E>, java.io.Serializable
+     
+  *   **AbstractQueue (ac) :**
+ 
+        ***Extends :***    AbstractCollection (ac)   
+        ***Implemnets :***    Queue<E>
+  
+  *   **AbstractCollection (ac) :** 
+
+      ***Implemnets :***   Collection(I)
+  
+  * ###  **Abstract Methods of above abstract classes :** ###
+     #### **1.**  **AbstractQueue (ac) :** ####   
+              None
+     #### **2.**  **AbstractCollection (ac)  :** ####    
+             a)iterator();
+             b)size();
