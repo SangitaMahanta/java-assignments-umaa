@@ -14,9 +14,9 @@
          
  *   **AbstractList (ac) :**
    
-   ***Extends :***   AbstractCollection (ac)
+     ***Extends :***   AbstractCollection (ac)
    
-   ***Implemnets :***   List (I)
+     ***Implemnets :***   List (I)
    
 
   * **AbstractCollection (ac) :** 
