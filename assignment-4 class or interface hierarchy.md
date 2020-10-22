@@ -51,20 +51,24 @@
       ***Implemnets :***   Collection<E>
    
   * ###  **Abstract Methods of above abstract classes :** ###
+  
      #### **1.**  **AbstractList (ac) :** ####    
              a)get(int index);
+             
      #### **2.**  **AbstractCollection (ac)  :** ####    
              a)iterator();
              b)size();      
              
  ## **3.**  **Stack (C):** ##
    ### ***Extends :*** ###
-     Vector<E>
+      Vector<E>
  *   **Vector (c) :**   
-    ***Extends :***    AbstractList: (ac)  
-    ***Implemnets :***  List<E>, RandomAccess, Cloneable, java.io.Serializable
+ 
+   ***Extends :***    AbstractList: (ac)  
+   ***Implemnets :***  List<E>, RandomAccess, Cloneable, java.io.Serializable
     
    *   **AbstractList (ac) :**
+   
        ***Extends :***   AbstractCollection (ac)
        ***Implemnets :***   List (I)
        
@@ -72,6 +76,7 @@
        ***Implemnets :***   Collection(I)
        
    * ###  **Abstract Methods of above abstract classes :** ###
+   
      #### **1.**  **AbstractList (ac) :** ####   
               a)get(int index);
      #### **2.**  **AbstractCollection (ac)  :** ####    
@@ -79,17 +84,19 @@
              b)size();  
              
              
-## **3.**  **ArrayBlockingQueue (C):** ##
+## **4.**  **ArrayBlockingQueue (C):** ##
    ### ***Extends :*** ###
      AbstractQueue (ac)
    ### ***Implements :*** ###
     BlockingQueue<E>, java.io.Serializable 
     
  *   ** AbstractQueue (ac) :**
-      ***Extends :***    AbstractCollection (ac)   
-      ***Implemnets :***    Queue<E>
+ 
+        ***Extends :***    AbstractCollection (ac)   
+        ***Implemnets :***    Queue<E>
    
-*   **AbstractCollection (ac) :**    
+*   **AbstractCollection (ac) :** 
+
       ***Implemnets :***   Collection<E>
     
 * ###  **Abstract Methods of above abstract classes :** ###
