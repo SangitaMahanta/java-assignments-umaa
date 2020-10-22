@@ -7,21 +7,27 @@
  ### ***Implements :*** ###
      List<E> (I), Deque<E> (I), Cloneable (I), java.io.Serializable (I)
      
-**a.** **AbstractSequentialList (ac) :**
+ *   **AbstractSequentialList (ac) :**
 
-   #### ***Extends :*** ####
-         AbstrcatList: (ac)    
+      ***Extends :***     AbstrcatList: (ac)    
+     
          
- **b.**  **AbstractList (ac) :**
-   #### ***Extends :*** ####
-     AbstractCollection (ac)
-   #### ***Implemnets :***  ####
-     List (I)
+ *   **AbstractList (ac) :**
+   
+   ***Extends :***   AbstractCollection (ac)
+   
+   ***Implemnets :***   List (I)
+   
 
   * **AbstractCollection (ac) :** 
-  #### ***Implemnets :***  ####
-      Collection (I)
+     
+       ***Implemnets :***   Collection (I)
+     
      
   * **Collection(I) :** 
- #### ***Extends :*** ####
-       Iterable(I)
+           
+       ***Extends :***  Iterable(I)
+
+   
+
+
