@@ -64,8 +64,8 @@
       Vector<E>
  *   **Vector (c) :**   
  
-   ***Extends :***    AbstractList: (ac)  
-   ***Implemnets :***  List<E>, RandomAccess, Cloneable, java.io.Serializable
+     ***Extends :***    AbstractList: (ac)  
+     ***Implemnets :***  List<E>, RandomAccess, Cloneable, java.io.Serializable
     
    *   **AbstractList (ac) :**
    
@@ -90,7 +90,7 @@
    ### ***Implements :*** ###
     BlockingQueue<E>, java.io.Serializable 
     
- *   ** AbstractQueue (ac) :**
+ *   **AbstractQueue (ac) :**
  
         ***Extends :***    AbstractCollection (ac)   
         ***Implemnets :***    Queue<E>
