@@ -65,3 +65,7 @@ public class InheritanceMain {
     child   y = 100
     child class static m1() 
     child x =  90
+  
+## QUESTION: 2 ##
+**Code example of instance of operator using classes as BaseParent->Parent->Child.?**
+  ### Program : ###
