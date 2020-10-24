@@ -144,3 +144,56 @@ public class Test {
 ## QUESTION: 11 ##
 **List down the public/protected (inherited) methods present in java.lag.Object class.?**
 ### ***Answer :*** ###
+
+
+* **Find the output:**
+```java
+class A
+{
+  public int i = 10;
+  public int j = 20;
+}
+class B extends A
+{
+   public int i = 100;
+   public int sumValue(int x)
+   {
+      return x + this.i + this.j +  super.i + super.j;
+   }
+}
+
+class Test
+{
+  public static void main(String[] args)
+  {
+    A a = new B();
+    int result = a.sumValue(a.i);
+    System.out.println(result);
+  }
+
+}
+```
+### ***Output :*** ###
+
+
+
+* **Fix the code with all the approaches you know.**
+```java
+class A
+{
+  private int i;
+  public A(int i)
+  {
+     this.i = i;
+  }
+}
+
+class B extends A
+{
+   public B()
+   {
+   
+   }
+}
+```
+### ***Output :*** ###
