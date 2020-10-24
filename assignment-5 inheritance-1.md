@@ -69,3 +69,42 @@ public class InheritanceMain {
 ## QUESTION: 2 ##
 **Code example of instance of operator using classes as BaseParent->Parent->Child.?**
   ### Program : ###
+  ```java
+  ```
+## QUESTION: 2 ##
+**Code example of super constructor.?**
+  ### Program : ###
+  ```java
+  package org.assignment.activity10;
+
+class X {
+    X() // parent class constructor
+    {
+        System.out.println("X() : parent class ");
+    }
+}
+
+class Y extends X {
+    Y() {
+        super(); // super() constructor
+        System.out.println("Y() : child class ");
+    }
+
+    X fun() {
+        X obj1 = new X();
+        return obj1;
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Y obj = new Y();
+        obj.fun();
+    }
+}
+```
+### ***Output :*** ###
+    X() : parent class 
+    Y() : child class 
+    X() : parent class 
+
