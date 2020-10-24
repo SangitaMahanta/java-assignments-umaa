@@ -71,7 +71,8 @@ public class InheritanceMain {
   ### Program : ###
   ```java
   ```
-## QUESTION: 2 ##
+  
+## QUESTION: 3 ##
 **Code example of super constructor.?**
   ### Program : ###
   ```java
@@ -108,3 +109,38 @@ public class Test {
     Y() : child class 
     X() : parent class 
 
+
+## QUESTION: 4 ##
+**Does multiple object created in inheritance hierarchy.?**
+### ***Answer :*** ###
+
+
+## QUESTION: 5 ##
+**Does super constructor invocation creates one more object.?**
+### ***Answer :*** ###
+
+
+## QUESTION: 6 ##
+**Code example of method hiding.?**
+### ***Output :*** ###
+
+
+## QUESTION: 7 ##
+**Code example of variable hiding.?**
+### ***Output :*** ###
+
+## QUESTION: 8 ##
+**Does static methods overridden.?**
+### ***Answer :*** ###
+
+## QUESTION: 9 ##
+**Does private methods overridden.?**
+### ***Answer :*** ###
+
+## QUESTION: 10 ##
+**By default any class extends which class.?**
+### ***Answer :*** ###
+
+## QUESTION: 11 ##
+**List down the public/protected (inherited) methods present in java.lag.Object class.?**
+### ***Answer :*** ###
