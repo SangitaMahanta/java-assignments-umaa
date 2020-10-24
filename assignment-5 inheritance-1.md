@@ -146,6 +146,7 @@ public class Test {
 ### ***Answer :*** ###
 
 
+
 * **Find the output:**
 ```java
 class A
@@ -177,6 +178,7 @@ class Test
 
 
 
+
 * **Fix the code with all the approaches you know.**
 ```java
 class A
@@ -197,3 +199,4 @@ class B extends A
 }
 ```
 ### ***Output :*** ###
+
