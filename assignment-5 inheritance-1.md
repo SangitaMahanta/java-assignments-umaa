@@ -142,6 +142,8 @@ public class Test {
 ## QUESTION: 9 ##
 **Does private methods overridden.?**
 ### ***Answer :*** ###
+     No, we can't override the static methods.
+     It only inherited.
 
 ## QUESTION: 10 ##
 **By default any class extends which class.?**
