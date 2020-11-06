@@ -121,6 +121,9 @@ public class Test {
 ## QUESTION: 5 ##
 **Does super constructor invocation creates one more object.?**
 ### ***Answer :*** ###
+     No,super() constructor can't create any new object.
+     If it is call the parent() class constructor ,then it will use same class constuctor.
+     
 
 
 ## QUESTION: 6 ##
