@@ -113,6 +113,9 @@ public class Test {
 ## QUESTION: 4 ##
 **Does multiple object created in inheritance hierarchy.?**
 ### ***Answer :*** ###
+     No, Multiple objects are not created in inheritance hierarchy.
+     Only we create the child class referance object.
+     Through the child clss referance we can access all the inherited class.
 
 
 ## QUESTION: 5 ##
