@@ -153,10 +153,10 @@ public class Test {
 ## QUESTION: 11 ##
 **List down the public/protected (inherited) methods present in java.lag.Object class.?**
 ### ***Answer :*** ###
-   ## public :- ##
+   #### public :- ####
       equals(Object obj),Class<?> getClass(),hashCode(),notify()
       notifyAll(),toString(),wait(),wait(long var1),wait(long timeoutMillis, int nanos)
-   ## protected :- ##   
+   #### protected :- ####  
     clone(),finalize()
 
 * **Find the output:**
@@ -186,9 +186,13 @@ class Test
 
 }
 ```
-### ***Output :*** ###
-
-
+### *** Explanation :*** ###
+  * There will be a compilation error because sumValue(int x) method is not present in class A.
+  * If we create a sumValue(int x) method in class A then the error can be avoided.
+  * If we type cast to [int result = ((B) a).sumValue(a.i);] , then the error can be avoided.
+ 
+ ### *** Output :*** ###
+      160
 
 
 * **Fix the code with all the approaches you know.**
@@ -211,4 +215,7 @@ class B extends A
 }
 ```
 ### ***Output :*** ###
+  * There will be compilation error at [public B()]
+  * If we create no argument constructor inside class A , the error can be fixed.
+  * If we call super function with one argument inside constructor B, the error can be fixed.
 
