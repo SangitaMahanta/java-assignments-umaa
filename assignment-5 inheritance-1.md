@@ -186,12 +186,12 @@ class Test
 
 }
 ```
-### *** Explanation :*** ###
+### ***Explanation :*** ###
   * There will be a compilation error because sumValue(int x) method is not present in class A.
   * If we create a sumValue(int x) method in class A then the error can be avoided.
   * If we type cast to [int result = ((B) a).sumValue(a.i);] , then the error can be avoided.
  
- ### *** Output :*** ###
+ ### ***Output :*** ###
       160
 
 
