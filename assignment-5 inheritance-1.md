@@ -138,6 +138,7 @@ public class Test {
 ## QUESTION: 8 ##
 **Does static methods overridden.?**
 ### ***Answer :*** ###
+       No,we can't override the static method().
 
 ## QUESTION: 9 ##
 **Does private methods overridden.?**
@@ -148,12 +149,15 @@ public class Test {
 ## QUESTION: 10 ##
 **By default any class extends which class.?**
 ### ***Answer :*** ###
-
+      By default any class extends from Object class.
 ## QUESTION: 11 ##
 **List down the public/protected (inherited) methods present in java.lag.Object class.?**
 ### ***Answer :*** ###
-
-
+   ## public :- ##
+      equals(Object obj),Class<?> getClass(),hashCode(),notify()
+      notifyAll(),toString(),wait(),wait(long var1),wait(long timeoutMillis, int nanos)
+   ## protected :- ##   
+    clone(),finalize()
 
 * **Find the output:**
 ```java
