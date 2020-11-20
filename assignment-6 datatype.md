@@ -1,6 +1,6 @@
 # ASSIGNMENT-6 #
-## QUESTION: 1 ##
-**1s complement?**
+
+## 1. ## **1s complement?**
 ### ***Explanation :*** ###
      To get 1’s complement of a binary number, simply invert the given number.
      For example -
@@ -18,3 +18,6 @@
         1's complement of given number is = 01010001.
         2's complement of binary number is = (01010001 + 1) =  010100110.
            
+## QUESTION: 3 ##
+**Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format.?**
+### ***Explanation :*** ###
