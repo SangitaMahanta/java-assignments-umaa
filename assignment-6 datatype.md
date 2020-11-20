@@ -22,8 +22,8 @@
 ## 3 ) **Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format.?**
 ### ***Answer :*** ###
   #### **Positive Whole Number to Binary :-** ####
-   * Procedure :
+ ####  * Procedure : ####
      1. - To convert integer to binary, 1st take Integer number and divide it by 2.
      2. - Continue dividing the quotient by 2 until  get the quotient of zero.
-     3. -After divide just write out the remainders in the reverse order.
+     3. - After divide just write out the remainders in the reverse order.
         
