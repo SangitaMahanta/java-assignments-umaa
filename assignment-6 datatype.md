@@ -6,5 +6,5 @@
      For example -
         Suppose the number is = 174
         To convert the number into binary representation that is = 10101110.
-        Simply invert each bit of given binary number, so 1's compliment of given           number will be = 01010001.
+        Simply invert each bit of given binary number, so 1's compliment of given number will be = 01010001.
      
