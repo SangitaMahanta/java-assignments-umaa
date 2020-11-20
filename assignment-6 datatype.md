@@ -2,8 +2,9 @@
 ## QUESTION: 1 ##
 **1s complement?**
 ### ***Explanation :*** ###
-     A 1's complement system or ones' complement arithmetic is a system in which negative numbers are 
-     represented by the inverse of the binary representations of their corresponding positive numbers.
-     In such a system, a number is negated (converted from positive to negative or vice versa) by computing its ones' complement.
-     An N-bit ones' complement numeral system can only represent integers in the range −(2N−1−1) to 2N−1−1
+     To get 1’s complement of a binary number, simply invert the given number.
+     For example -
+        Suppose the number is = 174
+        To convert the number into binary representation that is = 10101110.
+        Simply invert each bit of given binary number, so 1's compliment of given           number will be = 01010001.
      
