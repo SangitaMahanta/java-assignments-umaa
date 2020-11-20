@@ -18,6 +18,6 @@
         1's complement of given number is = 01010001.
         2's complement of binary number is = (01010001 + 1) =  010100110.
            
-## QUESTION: 3 ##
-**Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format.?**
+
+## 3 ) **Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format.?**
 ### ***Explanation :*** ###
