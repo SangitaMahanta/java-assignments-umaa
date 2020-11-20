@@ -21,3 +21,4 @@
 
 ## 3 ) **Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format.?**
 ### ***Explanation :*** ###
+   **Positive Whole Number to Binary :-**
