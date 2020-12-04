@@ -523,4 +523,7 @@ public class AccessData{
  **Why it is good to have private fields with public getters & setters?**
  ### ***Answer :*** ###
      By providing setter ,getter we have better control over the data and we can make sure that data integrity is maintained,so we keep instance variables(data) as private and provide public methods(API) to access them ,in a class.
+     
+     It maintain the encapsulation concept also.
+     
 
