@@ -171,7 +171,7 @@ class A {
     
      @Override
     public String toString() {
-        return "A[" + "i =" + i + ", j=" + j + ", k=" + k + "]";
+        return "A{" + "i =" + i + ", j=" + j + ", k=" + k + "}";
     }
 }
 ```
