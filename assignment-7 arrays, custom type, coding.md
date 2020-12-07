@@ -2,81 +2,81 @@
 
 ## ARRAYS 
 ### 1) Traverse an 1d array using while loop.  
-java
+```java
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 2) Traverse a 2d array using column major or row major.
-java
+```java
 
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 3) Print a 2d array using toString().  
-java
+```java
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 4) For a 2d array of dimesnion 3 * 4. arr.length will give 3 or 4?
-java
+```java
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 5) In a 2d array of size 3 * 3. convert a given index say 5 into i,j format. Access the element.  
-java
+```java
 
 
 
-
-**OutPut**
+```
+***OutPut***
 
 
 ### 6) use equals method for comparing 2 1d arrays having same or different content.   
-java
+```java
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 7) use deepEquals method for comparing 2 2d(or multidimensional) arrays having same or different content.  
-java
+```java
 
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 8)Traverse a 2d array using forEach loop along with for index loop.  
-java
+```java
 
 
-
-**OutPut**
+```
+***OutPut***
 
 ### 9) int[][] arr = new int[3][4]; Try to iterate this 2d array with below data.  
-java
+```java
 arr[0] = {1,2,3,4,5,6}; // is this valid? 
 arr[1] = {1,2,3}; // is this valid? 
 arr[2] = {1,2,3,4,5,6, 7}; // is this valid? 
+```
 
-
-**OutPut**
+***OutPut***
 
 ### 10) What is ArrayIndexOutOfBoundsException. Who is the parent class of ArrayIndexOutOfBoundsException.
-java
+```java
 
 
 
-
-**OutPut*
+```
+***OutPut***
 
 
 ## CUSTOM TYPES  
