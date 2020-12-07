@@ -18,11 +18,11 @@
 
 ```
 
-***OutPut***
-    12
-    33
-    26
-    25
+***OutPut:***
+    12  
+    33  
+    26  
+    25  
     66
 
 ### 2) Traverse a 2d array using column major or row major.
