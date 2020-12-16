@@ -24,6 +24,7 @@
     26  
     25  
     66
+    
 
 ### 2) Traverse a 2d array using column major or row major.
 ```java
