@@ -44,6 +44,7 @@
 ### 4) For a 2d array of dimesnion 3 * 4. arr.length will give 3 or 4?
 ```java
 
+
 ```
 
 ***OutPut***
